@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.printWidth": 100,
+    "editor.minimap.maxColumn": 100,
+    "window.zoomLevel": 1,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace"
+}
