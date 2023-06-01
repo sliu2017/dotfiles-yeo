@@ -1,0 +1,68 @@
+[{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/window"],
+  "modules-center": [],
+  "modules-right": [
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "network",
+    "clock"
+  ],
+  "hyprland/window": {
+    "format": "{}",
+    "separate-outputs": true
+  },
+  "pulseaudio": {
+    "format": "{volume}% <span>{icon}</span>",
+    "format-bluetooth": "{volume}% <span>{icon}</span>",
+    "format-bluetooth-muted": "<span></span>",
+    "format-muted": "<span></span>",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-scroll-up": "amixer set Master 1%+",
+    "on-scroll-down": "amixer set Master 1%-",
+    "on-click": "amixer set Master toggle",
+    "tooltip": false
+  },
+  "backlight": {
+    "format": "{percent}% <span>{icon}</span>",
+    "format-icons": ["", ""],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-"
+  },
+  "battery": {
+    "format": "{capacity}% <span>{icon}</span>",
+    "format-plugged": "{capacity}% <span></span>",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "tooltip": false
+  },
+  "network": {
+    "format-wifi": "<span></span>",
+    "format-ethernet": "<span></span>",
+    "format-disconnected": "Disconnected",
+    "format-alt": "{essid}|{signalStrength}",
+    "interval": 1,
+    "signal": 1,
+    "max-length": 20,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M:%S}",
+    "format-alt": "{:%B %d, %Y}",
+    "tooltip": false,
+    "interval": 1
+  }
+}]
